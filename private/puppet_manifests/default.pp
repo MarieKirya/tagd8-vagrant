@@ -168,9 +168,9 @@ class drush {
 class drupal {
     exec {
         "local-settings":
-            command => '/bin/cp /vagrant/sites/example.settings.local.php /vagrant/sites/default/settings.local.php',
-            onlyif => '/bin/ls /vagrant/sites/example.settings.local.php',
-            unless => '/bin/ls /vagrant/sites/default/settings.local.php';
+            command => '/bin/cp /vagrant/docroot/sites/example.settings.local.php /vagrant/docroot/sites/default/settings.local.php',
+            onlyif => '/bin/ls /vagrant/docroot/sites/example.settings.local.php',
+            unless => '/bin/ls /vagrant/docroot/sites/default/settings.local.php';
     }
 }
 
