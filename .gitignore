@@ -1,0 +1,74 @@
+# Ignore paths that contain user-generated content.
+docroot/sites/*/files
+docroot/sites/*/private
+docroot/files/*
+
+# Pantheon commits a settings.php for environment-specific settings.
+# Place local settings in settings.local.php
+docroot/sites/*/settings.local.php
+docroot/sites/*/services*.yml
+
+# Remove local node files for gulp support.
+.sass-cache*
+node_modules*
+
+# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
+/docroot/sites/default/**/files
+/docroot/sites/default/**/private
+
+# Ignore SimpleTest multi-site environment.
+sites/simpletest
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# Things in the core directory that Drupal 8 commits in the repository.
+!core/**/*.gz
+
+# Local development
+.phpintel
+
+# Vagrant VM data
+.vagrant
+
+# Examples
+modules/contrib/examples
+.bundle
+
+# Configs for development modules
+private/config/devel.settings.yml
+private/config/stage_file_proxy.settings.yml
+private/config/system.menu.devel.yml
+local.development.services.yml
