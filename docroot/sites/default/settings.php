@@ -295,7 +295,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'JWLI4-J7dCy_txl7Z8MnC6115PjHDiMSg9bLnyls3rnAEO8jyPLa1abIpbmsb8JGe9OFyHkd5g';
 
 /**
  * Deployment identifier.
@@ -763,3 +763,15 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
+$databases['default']['default'] = array (
+  'database' => 'vagrant',
+  'username' => 'vagrant',
+  'password' => 'vagrant',
+  'prefix' => '',
+  'host' => 'local.example.com',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/default/files/config__HUHWUnTDHvL6HL-lgOwUKOUg-sTlTJXG1OV5h7uq6YA-rGVxk9I1g0_5jhpKDGuUC4uqqS5Dg/sync';
