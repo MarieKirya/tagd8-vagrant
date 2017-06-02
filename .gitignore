@@ -62,6 +62,7 @@ Thumbs.db
 
 # Vagrant VM data
 .vagrant
+private/.vagrant
 
 # Examples
 modules/contrib/examples
